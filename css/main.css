@@ -1,0 +1,131 @@
+body {
+    background-color:  #2b9bbf;
+    color: #fff;
+}
+
+.section {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    margin-top: -100px;
+}
+
+.section.inverse {
+    background-color: #fff; 
+    color: #2b9bbf;
+}
+
+.section h1 {
+    padding-top: 30px;
+}
+
+.section ul {
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+
+.section ul.black {
+    color: #444;
+}
+
+#name h1 {
+    color: #006;
+    float: left;
+    margin: 0;
+}
+
+#name h2 {
+    color: #F88017;
+    float: left;
+}
+
+#navbar-main .nav {
+    padding-top: 20px;
+}
+
+#navbar-main .navbar-nav>li>a {
+    font-weight: bold;
+}
+
+#navbar-main .navbar-nav>li.active>a {
+    border-bottom: 1px solid #2b9bbf;
+}
+
+.navbar-text, .navbar-toggle {
+    color: #444;
+}
+
+.more {
+    cursor: pointer;
+}
+
+.more:hover, .more:focus {
+    background-color: #3071a9;
+}
+
+blockquote {
+    padding-top: 0px;
+}
+
+blockquote p {
+    font-size: 14px;
+    margin-left: 40px;
+    font-weight: normal;
+    line-height: normal;
+}
+
+blockquote h4 {
+    margin-top: 0px;
+}
+
+blockquote h5 {
+    color: #FFE542;
+    line-height: 1.25;
+}
+
+blockquote > h5 > a, a:hover, a:focus {
+    color: #FFA542;
+    line-height: 1.25;
+
+}
+
+blockquote h5 span.white {
+    color: #fff;
+}
+
+.interest blockquote h5 small {
+    display: inline;
+    color: #fff;
+}
+
+.list-group {
+    color: #444;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: normal;
+}
+
+.list-group .badge {
+    color: #FFE542;
+    background-color:#2b9bbf;
+}
+
+.glyphicon-star-3:before {
+    content: "\e006\e006\e006";
+}
+
+.glyphicon-star-2:before {
+    content: "\e006\e006";
+}
+
+.glyphicon-star-1:before {
+    content: "\e006";
+}
+
+
+footer {
+    text-align: center;
+}
+
+
+
+
