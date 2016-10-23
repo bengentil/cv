@@ -1,5 +1,5 @@
 body {
-    background-color:  #2b9bbf;
+    background-color:  #23395B;
     color: #fff;
 }
 
@@ -10,7 +10,7 @@ body {
 }
 
 .section.inverse {
-    background-color: #fff; 
+    background-color: #fff;
     color: #2b9bbf;
 }
 
@@ -27,15 +27,29 @@ body {
     color: #444;
 }
 
-#name h1 {
-    color: #006;
-    float: left;
-    margin: 0;
+.navbar-header img {
+  float: left;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 50px;
 }
 
-#name h2 {
-    color: #F88017;
+#job-desc {
+  float: left !important;
+  line-height: 1.3em;
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+#name {
+    color: #23395B;
     float: left;
+    margin: 0;
+    font-weight: lighter;
+    padding-top: 20px;
 }
 
 #navbar-main .nav {
@@ -52,6 +66,7 @@ body {
 
 .navbar-text, .navbar-toggle {
     color: #444;
+    line-height: 2em;
 }
 
 .more {
@@ -70,21 +85,24 @@ blockquote p {
     font-size: 14px;
     margin-left: 40px;
     font-weight: normal;
-    line-height: normal;
+    line-height: 1.4em;
 }
 
 blockquote h4 {
     margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 blockquote h5 {
     color: #FFE542;
     line-height: 1.25;
+    font-size: 15px;
 }
 
 blockquote > h5 > a, a:hover, a:focus {
-    color: #FFA542;
+    color: #FFE542;
     line-height: 1.25;
+    font-weight: bold;
 
 }
 
@@ -97,6 +115,7 @@ blockquote h5 span.white {
     color: #fff;
 }
 
+/*
 .list-group {
     color: #444;
     font-size: 12px;
@@ -107,6 +126,36 @@ blockquote h5 span.white {
 .list-group .badge {
     color: #FFE542;
     background-color:#2b9bbf;
+}*/
+
+.badge {
+  background-color: #3a5a77;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+blockquote .career-keyword {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+blockquote .career-keyword>.badge {
+}
+
+blockquote .career-keyword>.badge:before {
+  content: "# ";
+}
+
+blockquote .career-keyword>.badge-role {
+  background-color: #7f95A1;
+}
+
+blockquote .career-keyword>.badge-role:before {
+  content: "@ ";
+}
+
+.glyphicon {
+  margin-left: 5px;
 }
 
 .glyphicon-star-3:before {
@@ -125,7 +174,3 @@ blockquote h5 span.white {
 footer {
     text-align: center;
 }
-
-
-
-
