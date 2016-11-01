@@ -1,6 +1,14 @@
 body {
-    background-color:  #23395B;
-    color: #fff;
+    background-color:  #fff;
+    color: #23395B;
+}
+
+@media print {
+  body {
+      background-color:  #23395B !important;
+      color: #fff !important;
+      font-size: 12px !important;
+  }
 }
 
 .section {
@@ -25,6 +33,32 @@ body {
 
 .section ul.black {
     color: #444;
+}
+
+section.side-panel {
+  padding-top: 20px;
+  background-color: #23395B;
+  color: #fff;
+}
+
+section.side-panel blockquote {
+  border-right: 5px solid #fff;
+}
+
+section.side-panel blockquote h5 {
+  color: #FFE542;
+}
+section.side-panel blockquote a, a:hover, a:focus {
+  color: #FFE542;
+}
+
+section.side-panel blockquote h5 span.white {
+  color: #fff;
+  line-height: 2;
+}
+
+section.side-panel blockquote.pull-right small {
+  color: #fff;
 }
 
 .navbar-header img {
@@ -79,6 +113,7 @@ body {
 
 blockquote {
     padding-top: 0px;
+    border-left: 5px solid #3a5a77;
 }
 
 blockquote p {
@@ -94,20 +129,20 @@ blockquote h4 {
 }
 
 blockquote h5 {
-    color: #FFE542;
+    color: #3a5a77;
     line-height: 1.25;
     font-size: 15px;
 }
 
 blockquote > h5 > a, a:hover, a:focus {
-    color: #FFE542;
+    color: #3a5a77;
     line-height: 1.25;
     font-weight: bold;
 
 }
 
 blockquote h5 span.white {
-    color: #fff;
+    color: #3a5a77;
 }
 
 .interest blockquote h5 small {
