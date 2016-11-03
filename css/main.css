@@ -3,14 +3,6 @@ body {
     color: #23395B;
 }
 
-@media print {
-  body {
-      background-color:  #23395B !important;
-      color: #fff !important;
-      font-size: 12px !important;
-  }
-}
-
 .section {
     padding-top: 100px;
     padding-bottom: 150px;
@@ -36,6 +28,7 @@ body {
 }
 
 section.side-panel {
+  display: block;
   padding-top: 20px;
   background-color: #23395B;
   color: #fff;

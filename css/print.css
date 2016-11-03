@@ -1,0 +1,7 @@
+html {
+    zoom: 0.50; /*workaround for phantomJS2 rendering pages too large*/
+}
+
+.download-link {
+  display: none;
+}
