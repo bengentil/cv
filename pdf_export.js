@@ -3,7 +3,7 @@ var page = new WebPage();
 page.paperSize = {
     format        : "A4",
     orientation    : "portrait",
-    margin        : { left:"0.5cm", right:"0.5cm", top:"0.5cm", bottom:"0cm" }
+    margin        : { left:"0.7cm", right:"0.7cm", top:"1cm", bottom:"0cm" }
 };
 
 page.viewportSize = {

@@ -2,6 +2,10 @@ html {
     zoom: 0.50; /*workaround for phantomJS2 rendering pages too large*/
 }
 
+.container {
+  max-width: none;
+}
+
 .download-link {
   display: none;
 }
