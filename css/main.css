@@ -3,8 +3,8 @@ body {
     color: #23395B;
 }
 
-h1,h2,h3,h4,h5,p {
-  font-family: 'Roboto Mono', 'Lucida Sans Typewriter', 'Lucida Console', Monaco, 'Bitstream Vera Sans Mono', monospace;
+h1,h2,h3,h4,h5,h6,p,li {
+  font-family: 'Fira Mono','Roboto Mono', 'Lucida Sans Typewriter', 'Lucida Console', Monaco, 'Bitstream Vera Sans Mono', monospace;
 }
 
 .equal {
@@ -79,33 +79,119 @@ section.side-panel blockquote.pull-right small {
   color: #fff;
 }
 
-.navbar-header img {
-  float: left;
-  margin-right: 20px;
-  margin-top: 10px;
+section.side-panel .badge {
+  margin-bottom: 10px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+img.navbar-text {
+  color: #23395B;
+  margin-left: 20px;
+  margin-right: 0px;
+  margin-top: 20px;
   margin-bottom: 10px;
   border-radius: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  .navbar-text {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 832px) {
+  #mail {
+    margin-top: 0px;
+  }
+
+  #mail>p {
+    float: left !important;
+  }
+}
+
+@media screen and (min-width: 833px) {
+  #mail {
+    float: right !important;
+    padding-top: 15px;
+  }
+  #mail>p {
+    margin: 0px;
+  }
+}
+
+@media print {
+  #mail {
+    float: right !important;
+    margin-top: 40px;
+    margin-right: 40px;
+  }
+
+  section {
+  }
+
+  section.side-panel {
+    margin-top: 40px;
+    background-color: #fff;
+    color: #23395B;
+    width: 100%;
+  }
+  section.side-panel blockquote {
+    border-right: 0px;
+    border-left: 5px solid #23395B;
+    text-align: left;
+    float: left !important;
+    padding-left: 10px;
+    width: auto;
+  }
+
+  section.side-panel blockquote h5 {
+    color: #ea572e;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  section.side-panel blockquote a, a:hover, a:focus {
+    color: #ea572e;
+  }
+
+  section.side-panel blockquote h5 span.white {
+    color: #23395B;
+    line-height: 2;
+    text-align: left;
+  }
+
+  section.side-panel blockquote.pull-right small {
+    color: #23395B;
+    text-align: left;
+  }
+}
+
 #job-desc {
-  float: left !important;
   line-height: 1.3em;
   margin-top: 10px;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#job-subtile {
+  line-height: 1.3em;
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-style: italic;
+  font-size: 13px;
 }
 
 #name {
     color: #23395B;
-    float: left;
-    margin: 0;
-    font-weight: lighter;
-    padding-top: 20px;
-}
-
-#navbar-main .nav {
-    padding-top: 20px;
+    font-weight: normal;
 }
 
 #navbar-main .navbar-nav>li>a {
@@ -134,11 +220,12 @@ blockquote {
     border-left: 5px solid #3a5a77;
 }
 
-blockquote p {
+blockquote p, ul, h6 {
     font-size: 14px;
-    margin-left: 40px;
+    margin-left: 20px;
     font-weight: normal;
-    line-height: 1.4em;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 blockquote h4 {
@@ -154,11 +241,25 @@ blockquote h5 {
     font-size: 15px;
 }
 
-blockquote > h5 > a, a:hover, a:focus {
+blockquote h6 {
     color: #3a5a77;
+    margin-left: 20px;
     line-height: 1.25;
-    font-weight: bold;
+}
 
+.job {
+  margin-bottom: 20px;
+}
+
+.job h5 {
+  color: #3a5a77;
+  font-weight: bold;
+}
+
+.job a, a:hover, a:focus {
+  color: #e4572e;
+  line-height: 1.25;
+  font-weight: bold;
 }
 
 blockquote h5 span.white {
@@ -170,23 +271,15 @@ blockquote h5 span.white {
     color: #fff;
 }
 
-/*
-.list-group {
-    color: #444;
-    font-size: 12px;
-    font-weight: normal;
-    line-height: normal;
-}
-
-.list-group .badge {
-    color: #FFE542;
-    background-color:#2b9bbf;
-}*/
-
 .badge {
   background-color: #3a5a77;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 5px;
+}
+
+li .badge {
+  background-color: #3a5a77;
+  padding: 5px;
+  margin-bottom: 2px;
 }
 
 blockquote .career-keyword {
